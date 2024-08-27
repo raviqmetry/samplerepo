@@ -1,1 +1,25 @@
-Sample File
+Feature: User Login
+
+  # This feature covers the user login functionality of the web application.
+  # It ensures that a user can successfully log in with valid credentials.
+
+  Background: 
+    Given the user is on the login page
+
+  Scenario: Successful login with valid credentials
+    # Scenario Summary: 
+    # This scenario verifies that a user can log in to the application with correct username and password.
+    
+    # Step Definitions:
+    
+    When the user enters a valid username and password
+    # Description: The user types in their correct username and password into the respective fields.
+
+    And the user clicks on the login button
+    # Description: The user clicks the 'Login' button to submit their credentials.
+
+    Then the user should be redirected to the dashboard
+    # Description: After a successful login, the user is redirected to the dashboard page where they can see their account details.
+
+    And the user should see a welcome message
+    # Description: A welcome message should appear at the top of the dashboard, confirming the user's successful login.
